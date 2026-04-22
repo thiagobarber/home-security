@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protect Your Home Now</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    .font-heading { font-family: 'Bebas Neue', sans-serif; }
+    .font-body { font-family: 'Source Sans 3', sans-serif; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(251,191,36, 0.4); } 50% { box-shadow: 0 0 40px rgba(251,191,36, 0.7); } }
+    .fade-up { animation: fadeUp 0.7s ease-out both; }
+    .fade-up-2 { animation: fadeUp 0.7s ease-out 0.15s both; }
+    .fade-up-3 { animation: fadeUp 0.7s ease-out 0.3s both; }
+    .fade-up-4 { animation: fadeUp 0.7s ease-out 0.45s both; }
+    .fade-up-5 { animation: fadeUp 0.7s ease-out 0.6s both; }
+    .cta-pulse { animation: pulse-glow 2s ease-in-out infinite; }
+    .stat-card { background: linear-gradient(135deg, rgba(251,191,36,0.08) 0%, rgba(0,0,0,0) 100%); }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-body">
+  <div id="app" class="w-full" style="background: #0a0a0a;"><!-- SINGLE POWERFUL SECTION -->
+   <section class="relative w-full" style="background: linear-gradient(180deg, #1a0000 0%, #0a0a0a 100%); min-height: 100vh; display: flex; align-items: center;">
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 20% 50%, #dc2626 0%, transparent 50%), radial-gradient(circle at 80% 20%, #991b1b 0%, transparent 40%);"></div>
+    <div class="relative max-w-3xl mx-auto px-5 w-full text-center"><!-- ALERT BADGE -->
+     <div class="fade-up inline-flex items-center gap-2 px-4 py-1.5 rounded-full border mb-6" style="border-color: #fbbf24; background: rgba(251,191,36,0.1);"><span class="inline-block w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span> <span class="text-yellow-400 text-sm font-semibold tracking-wide uppercase">2.5M Burglaries/Year (1 Every 25 Seconds)</span>
+     </div><!-- MAIN HEADLINE -->
+     <h1 id="headline" class="fade-up-2 font-heading text-5xl md:text-7xl leading-tight tracking-wide mb-6" style="color: #ffffff;">Your Family Is Sleeping.<br><span style="color: #fbbf24;">Is Anyone Watching?</span></h1><!-- SUBHEADLINE WITH STATS -->
+     <p id="subheadline" class="fade-up-3 text-lg md:text-xl max-w-2xl mx-auto mb-8" style="color: #a3a3a3; line-height: 1.7;">38% of break-ins happen while you're HOME. Police take 7+ minutes to arrive. Most systems fail when power goes out.</p><!-- QUICK BENEFITS -->
+     <div class="fade-up-4 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-xl mx-auto mb-10">
+      <div class="flex items-center gap-2 justify-center" style="color: #22c55e;"><i data-lucide="check-circle" style="width: 20px; height: 20px;"></i> <span class="text-sm font-semibold">No Monthly Fees</span>
+      </div>
+      <div class="flex items-center gap-2 justify-center" style="color: #22c55e;"><i data-lucide="check-circle" style="width: 20px; height: 20px;"></i> <span class="text-sm font-semibold">Works Without Power</span>
+      </div>
+      <div class="flex items-center gap-2 justify-center" style="color: #22c55e;"><i data-lucide="check-circle" style="width: 20px; height: 20px;"></i> <span class="text-sm font-semibold">Proven by Experts</span>
+      </div>
+      <div class="flex items-center gap-2 justify-center" style="color: #22c55e;"><i data-lucide="check-circle" style="width: 20px; height: 20px;"></i> <span class="text-sm font-semibold">Sleep Peacefully</span>
+      </div>
+     </div><!-- PRIMARY CTA --> <a href="https://www.theantilooterkit.com/main/#aff=thiagobarber" target="_blank" rel="noopener noreferrer" id="cta-top" class="fade-up-5 cta-pulse inline-block px-12 py-5 rounded-lg text-white text-xl md:text-2xl font-bold tracking-wide transition-transform hover:scale-105 mb-6" style="background: #dc2626;">Protect My Home Now →</a> <!-- SOCIAL PROOF -->
+     <div class="fade-up-5 max-w-md mx-auto pt-4 border-t" style="border-color: #262626;">
+      <p class="text-sm mb-3" style="color: #fbbf24; font-weight: 600;">⭐⭐⭐⭐⭐ Trusted by thousands</p>
+      <p class="text-sm italic" style="color: #a3a3a3;">"After our neighbor's house got hit, I couldn't sleep for weeks. This kit changed everything. My wife finally feels safe again." — Mike R., Houston</p>
+     </div><!-- FOOTER TEXT -->
+     <p class="text-xs mt-8" style="color: #737373;">🔒 Satisfaction guaranteed · Ships fast · Independent review</p>
+    </div>
+   </section>
+  </div>
+  <script>
+  const defaultConfig = {
+    headline: 'Your Family Is Sleeping. Is Anyone Watching the Door?',
+    subheadline: 'Every 25 seconds, a home is broken into in America. Most victims never thought it would happen to them. Don\'t wait until it\'s too late.',
+    cta_text: 'Protect My Home Now →',
+    background_color: '#0a0a0a',
+    accent_color: '#fbbf24',
+    text_color: '#ffffff',
+    muted_color: '#a3a3a3',
+    success_color: '#22c55e',
+    font_family: 'Source Sans 3',
+    font_size: 16
+  };
+
+  async function initApp() {
+    const onConfigChange = async (config) => {
+      const c = { ...defaultConfig, ...config };
+
+      document.getElementById('headline').innerHTML = c.headline.replace(/\./g, '.<br><span style="color:' + c.accent_color + '">') || defaultConfig.headline;
+      // Simpler approach - just set text
+      document.getElementById('headline').textContent = c.headline;
+      document.getElementById('subheadline').textContent = c.subheadline;
+      document.getElementById('cta-top').textContent = c.cta_text;
+      document.getElementById('cta-bottom').textContent = c.cta_text;
+
+      document.getElementById('app').style.background = c.background_color;
+      document.querySelectorAll('[data-recolor-text]').forEach(el => el.style.color = c.text_color);
+
+      const customFont = c.font_family || defaultConfig.font_family;
+      document.querySelectorAll('.font-body').forEach(el => {
+        el.style.fontFamily = `${customFont}, sans-serif`;
+      });
+
+      const base = c.font_size || defaultConfig.font_size;
+      document.body.style.fontSize = base + 'px';
+    };
+
+    window.elementSdk.init({
+      defaultConfig,
+      onConfigChange,
+      mapToCapabilities: (config) => ({
+        recolorables: [
+          { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+          { get: () => config.accent_color || defaultConfig.accent_color, set: (v) => { config.accent_color = v; window.elementSdk.setConfig({ accent_color: v }); } },
+          { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+          { get: () => config.muted_color || defaultConfig.muted_color, set: (v) => { config.muted_color = v; window.elementSdk.setConfig({ muted_color: v }); } },
+          { get: () => config.success_color || defaultConfig.success_color, set: (v) => { config.success_color = v; window.elementSdk.setConfig({ success_color: v }); } }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
+        }
+      }),
+      mapToEditPanelValues: (config) => new Map([
+        ['headline', config.headline || defaultConfig.headline],
+        ['subheadline', config.subheadline || defaultConfig.subheadline],
+        ['cta_text', config.cta_text || defaultConfig.cta_text]
+      ])
+    });
+  }
+
+  initApp();
+  document.addEventListener('DOMContentLoaded', () => { lucide.createIcons(); });
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f049295c396d249',t:'MTc3Njg2MDMyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
